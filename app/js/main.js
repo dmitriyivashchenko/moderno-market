@@ -1,3 +1,3 @@
 document.addEventListener('DOMContentLoaded', () => {
-    alert('DOM is ready');
+    let mixer = mixitup('.products__inner-items');
 });

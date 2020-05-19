@@ -19,6 +19,7 @@
     "lodash": "^4.17.15",
     "lodash.template": "^4.5.0",
     "magnific-popup": "^1.1.0",
+    "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1"
   },
