@@ -125,13 +125,6 @@
     color: $dark-blue;
 }
 
-.products__title{
-    text-align: center;
-    @include f700;
-    font-size: 36px;
-    line-height: 60px;
-}
-
 .products__inner-btn{
     text-align: center;
     margin: 48px 0 60px 0;
@@ -256,11 +249,17 @@
         color: $brackets;
     }
 }
+
 //end products
+
 // start product-slider
 
 .product-slider{
     padding-bottom: 120px;
+    &__title{
+        padding-top: 112px;
+        padding-bottom: 40px;
+    }
     .slick-dots{
         text-align: center;
         li{
@@ -286,3 +285,60 @@
 }
 
 // end product-slider
+
+// start advantages
+
+.advantages{
+    background-color: $dark-blue;
+    color: #fff;
+    padding: 110px 0;
+    &__title{
+        color: #fff;
+        padding-bottom: 85px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 345px;
+        text-align: center;
+        padding: 0 15px;
+        &:hover{
+            color: $green;
+            .advantages__item-images{
+                background-color: $green;
+                g{
+                    fill: #fff;
+                }
+            }
+        }
+        &-images{
+            width: 114px;
+            height: 114px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 30px;
+            transition: all .5s;
+        }
+        &-title{
+            margin-bottom: 25px;
+            font-size: 24px;
+            @include f500;
+            transition: all .5s;
+        }
+        &-text{
+            font-size: 15px;
+            color: $brackets;
+
+        }
+    }
+}
+.svg-icon-3{
+    margin-top: 15px;
+}
+
+// end advantages
