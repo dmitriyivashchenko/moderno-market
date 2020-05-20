@@ -380,3 +380,43 @@
         background-color: #fff;
     }
 }
+
+// end authors
+
+// start tuturial
+
+.tutorial{
+    padding: 70px 0 120px;
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        max-width: 370px;
+        width: 100%;
+    }
+}
+
+.tutorial__item{
+    &-image{
+        margin-top: 65px;
+        min-height: 270px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+    }
+    &-title{
+        background-color: #f8f8f8;
+        font-size: 24px;
+        text-align: center;
+        @include f700;
+        padding: 30px 10px;
+        color: $dark-blue;
+        display: block;
+
+    }
+}
+
+
+// end tuturial
