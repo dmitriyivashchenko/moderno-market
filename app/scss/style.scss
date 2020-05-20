@@ -69,13 +69,13 @@
     padding: 130px 0 100px;
     text-align: center;
     &-title{
-        font-weight: 700;
+        @include f700;
         font-size: 48px;
         line-height: 48px;
         margin: 25px 0 30px;
     }
     &-text{
-        font-weight: 500;
+        @include f500;
         font-size: 20px;
         line-height: 30px;
         margin-bottom: 50px;
@@ -94,10 +94,10 @@
         border: none;
         box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
         &::placeholder{
             color: #90a4ae;
-            font-weight: 500;
+            @include f500;
         }
     }
     button{
@@ -127,7 +127,7 @@
 
 .products__title{
     text-align: center;
-    font-weight: 700;
+    @include f700;
     font-size: 36px;
     line-height: 60px;
 }
@@ -138,7 +138,7 @@
 
     button{
         font-size: 14px;
-        font-weight: 500;
+        @include f500;
         border: none;
         padding: 12px 22px;
         background-color: #fff;
@@ -179,7 +179,7 @@
     }
     &-title{
         font-size: 18px;
-        font-weight: 500;
+        @include f700;
         display: block;
         color: $dark-blue;
     }
@@ -189,7 +189,7 @@
         min-height: 90px;
         padding: 10px 30px;
         align-items: center;
-        font-weight: 500;
+        @include f500;
         border-bottom: 1px solid #e7ecf2;
     }
     &-name{
@@ -199,6 +199,10 @@
         font-size: 14px;
         color: $green;
         display: block;
+    }
+    &-price{
+        @include f700;
+        font-size: 20px;
     }
     &-info{
         display: flex;
@@ -210,6 +214,8 @@
     &-author{
         display: flex;
         align-items: center;
+        max-width: 245px;
+        overflow: hidden;
         .avatar{
             width: 30px;
             height: 30px;
@@ -222,7 +228,7 @@
         }
         span{
             font-size: 14px;
-            font-weight: 500;
+            @include f500;
         }
     }
 }
@@ -239,5 +245,44 @@
     }
 }
 
+.rate-stars{
+    margin-right: 3px;
+    display: inline-block;
+}
 
+.product__item-star{
+    font-size: 12px;
+    span{
+        color: $brackets;
+    }
+}
 //end products
+// start product-slider
+
+.product-slider{
+    padding-bottom: 120px;
+    .slick-dots{
+        text-align: center;
+        li{
+            display: inline-block;
+            margin: 0 3px;
+            &.slick-active{
+                button{
+                    background-color: $green;
+                }
+            }
+            button{
+                border-radius: 50%;
+                background-color: rgb(232, 232, 232);
+                border: none;
+                font-size: 0;
+                width: 16px;
+                height: 16px;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
+}
+
+// end product-slider
