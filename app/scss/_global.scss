@@ -43,7 +43,9 @@ button, input[type=submit]{
     margin: 0 auto;
     padding: 0 15px;
 }
-.page-content{
+.page-content,
+.breadcrumbs,
+.product-one{
     background-color: $gray;
 }
 .title{
