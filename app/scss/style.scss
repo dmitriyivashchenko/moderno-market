@@ -317,6 +317,108 @@
 }
 // end header
 
+// start modal
+#modal{
+    background-color: $green;
+    max-width: 730px;
+    width: 100%;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+.login__title{
+    text-align: center;
+    @include f700;
+    font-size: 48px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.login__wrapper{
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    label{
+        position: relative;
+        &::before{
+            position: absolute;
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 14px;
+            left: 18px;
+            top: 9px;
+            z-index: 1;
+        }
+    }
+    .login__label-name::before{
+        content: '\f007';
+    }
+    .login__label-pass::before{
+        content: '\f023';
+        top: 11px;
+    }
+    input{
+        height: 43px;
+        margin-bottom: 8px;
+        border: none;
+        outline-width: thick;
+        outline-color: rgba(31, 182, 31, 0.5);
+        background-color: #76ae36;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 40px;
+        display: block;
+        width: 100%;
+        &::placeholder{
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    button{
+        margin-top: 19px;
+        padding: 18px 0 16px;
+        background-color: #fff;
+        width: 140px;
+        text-transform: uppercase;
+        border: none;
+        margin-right: 10px;
+        @include f700;
+        color: #000;
+        text-align: center;
+        box-shadow: 0px 2px 2px 0 rgba(118, 174, 54, 0.75);
+    }
+}
+.lost-pass{
+    display: block;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+.create-acc{
+    margin-top: 19px;
+    padding: 13px 0 14px 28px;
+    text-align: center;
+    background-color: #76ae36;
+    // height: 43px;
+    width: 245px;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+    &::before{
+        content: '\f044';
+        font-family: 'icomoon';
+        position: absolute;
+        left: 30px;
+        top: 13px;
+    }
+}
+.fancybox-button svg path{
+    color: #fff;
+}
+
+
+// end modal
+
 // start search
 
 .search{
@@ -1529,5 +1631,89 @@ button.icon-unsorted{
 }
 
 // end product-one
+
+// start page 404
+
+.page-404__wrapper,
+.about__wrapper{
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+.page-404__head,
+.about__head{
+    font-size: 24px;
+    color: #444;
+    @include f500;
+    padding: 23px 27px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.page-404__inner{
+    text-align: center;
+    background-color: $green;
+    color: #fff;
+}
+.page-404__404{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 300px;
+    line-height: 300px;
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    position: relative;
+    &::after{
+        position: absolute;
+        content: '';
+        background-image: url(../images/man-404.png);
+        width: 150px;
+        height: 292px;
+        margin-left: 20px;
+    }
+}
+.page-404__title{
+    margin-bottom: 30px;
+    @include f300;
+    font-size: 30px;
+}
+.page-404__text{
+    font-size: 18px;
+    max-width: 501px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.page-404__link{
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 20px 30px 16px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    margin-bottom: 100px;
+}
+
+// end page 404
+
+// start about
+
+.about__inner{
+    padding: 0 50px;
+}
+.about__box{
+    h3{
+        @include f700;
+        font-size: 20px;
+        color: #444;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    p{
+        margin-bottom: 40px;
+        color: #707070;
+    }
+}
+
+
+// end about
 
 @import 'media';
