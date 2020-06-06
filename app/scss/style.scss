@@ -485,8 +485,13 @@
 }
 
 //end  search
+
 //start products
 
+.product-slider__wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
 .container-fluid{
     width: 100%;
     padding: 0 15px;
@@ -497,6 +502,8 @@
     padding-top: 110px;
     padding-bottom: 110px;
     color: $dark-blue;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .products__inner-btn{
@@ -525,9 +532,14 @@
 
 .products__inner-items{
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    margin-left: -30px;
     flex-wrap: wrap;
 
+}
+.products .product__item{
+    flex-basis: calc(25% - 30px);
+    margin-left: 30px;
 }
 
 .product__item{
@@ -1150,16 +1162,18 @@
 }
 .products-page__items{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 30px;
+    margin-left: -30px;
 }
 .products-page__content{
     width: 100%;
     .product__item{
-        max-width: 270px;
+        flex-basis: calc(33.3333% - 30px);
         background-color: #fff;
         transition: all .3s;
+        margin-left: 30px;
         &-image{
             min-height: 180px;
         }
@@ -1263,6 +1277,7 @@ button.icon-unsorted{
     &.list{
         max-width: 100%;
         max-height: 180px;
+        flex-basis: 100%;
         .product__item-image{
             width: 240px;
             float: left;
@@ -1327,7 +1342,7 @@ button.icon-unsorted{
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 16px 0;
+      padding: 16px;
     }
     &__images{
         max-width: 829px;
@@ -1912,6 +1927,39 @@ button.icon-unsorted{
         border: 1px solid #dedede;
         padding: 0 10px;
         color: #707070;
+    }
+    .jq-selectbox{
+        width: 100%;
+        max-width: 540px;
+        &__select{
+            height: 40px;
+            padding: 0px 18px;
+            border: 1px solid #d7d7d7;
+            border-bottom-color:#d7d7d7;
+            border-radius: 0;
+            background: #f9f9f9;
+            box-shadow: none;
+            text-shadow: none;
+            color: #707070;
+            font-family: 'Roboto-Regular', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 40px;
+        }
+        &__trigger{
+            border-left: none;
+        }
+        &__trigger-arrow{
+            border: none;
+            font-size: 15px;
+            right: 20px;
+            top: 0;
+            line-height: 40px;
+            &::before{
+                font-family: 'icomoon';
+                content: '\f0d7';
+            }
+        }
     }
 }
 // end settings

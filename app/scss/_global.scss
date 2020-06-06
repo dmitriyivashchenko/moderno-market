@@ -63,6 +63,8 @@ button, input[type=submit]{
 .breadcrumbs{
     &__inner{
         padding: 45px 0 40px;
+        overflow: hidden;
+        width: 1200px;
     }
     &__list{
         li{
@@ -100,4 +102,7 @@ button, input[type=submit]{
         font-size: 14px;
         left: 0;
     }
+}
+#modal{
+    display: none;
 }
