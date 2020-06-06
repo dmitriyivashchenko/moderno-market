@@ -1,3 +1,16 @@
+@media (max-width: 1200px){
+    .withdrawals__inner{
+        display: block;
+    }
+    .withdrawals__col{
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .withdrawals__content-item{
+        max-width: 490px;
+    }
+}
+
 @media (max-width: 1150px){
     .footer__inner{
         flex-wrap: wrap;
@@ -92,7 +105,18 @@
         z-index: 1;
     }
 }
-
+@media (max-width: 540px){
+    .withdrawals__content{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .withdrawals__content-item{
+        min-width: 490px;
+    }
+    .withdrawals__content-items{
+        overflow-x: scroll;
+    }
+}
 @media (max-width: 520px){
     .header__btn-menu{
         display: block;

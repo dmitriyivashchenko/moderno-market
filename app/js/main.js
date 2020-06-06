@@ -51,6 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
       return false;
     });
   
+  $('input[type="file"], select').styler();
+
   let mixer = mixitup('.products__inner-items');
 
 });
